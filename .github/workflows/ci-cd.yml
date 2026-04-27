@@ -68,8 +68,8 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
           mvn verify sonar:sonar \
-            -Dsonar.projectKey=your-org_order-service \
-            -Dsonar.organization=your-org \
+            -Dsonar.projectKey=himankam_order-service \
+            -Dsonar.organization=himankam \
             -Dsonar.host.url=https://sonarcloud.io \
             -Dsonar.token=${{ secrets.SONAR_TOKEN }} \
             -B
